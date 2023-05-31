@@ -32,9 +32,21 @@ To compile and run the code, follow these steps:
 1. Make sure you have a C compiler installed on your system (e.g., GCC).
 2. Open a terminal and navigate to the directory containing the source code files (`vuln.c` and `secure.c`).
 3. Compile the vulnerable code by running the following command:
+```
+gcc -o vuln vuln.c
+```
 4. Compile the secure code by running the following command:
+```
+gcc -o secure secure.c
+```
 5. Run the vulnerable code by executing the following command:
+```
+./vuln
+```
 6. Run the secure code by executing the following command:
+```
+./secure
+```
 
 **Note:** Running the vulnerable code may result in undefined behavior or crashes due to the use-after-free vulnerability. The secure code, on the other hand, demonstrates the correct usage to prevent the vulnerability.
 
